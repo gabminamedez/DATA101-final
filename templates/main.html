@@ -1,50 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Ingat.ph | Metro Manila</title>
-        <meta name='description' content=''>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
-        <link rel='stylesheet' href='../static/css/styles.css'>
-    </head>
+{% extends 'base.html' %}
+{% block head %}
+<!-- insert additional header content here -->
+{% endblock %}
+{% block body %} 
+<!-- insert body content here-->
 
-    <body>
-        <div id='header'>
-            <h1 class='left'>Ingat.ph</h1>
+<div class='container-fluid'>
+    <h1>charts here</h1>
+</div>
 
-            <div class='select right'>
-                <label id='selectCityLabel'>Select City:</label>
-                <select name='city'>
-                    <option value=''>Metro Manila (All)</option>
-                    <option value=''>Caloocan</option>
-                    <option value=''>Las Piñas</option>
-                    <option value=''>Makati</option>
-                    <option value=''>Malabon</option>
-                    <option value=''>Mandaluyong</option>
-                    <option value=''>Manila</option>
-                    <option value=''>Marikina</option>
-                    <option value=''>Muntinlupa</option>
-                    <option value=''>Navotas</option>
-                    <option value=''>Parañaque</option>
-                    <option value=''>Pasay</option>
-                    <option value=''>Pasig</option>
-                    <option value=''>Quezon City</option>
-                    <option value=''>San Juan</option>
-                    <option value=''>Taguig</option>
-                    <option value=''>Valenzuela</option>
-                </select>
-                <img id='locationPinImg' src='../static/img/location_pin.png' />
-            </div>
-        </div>
-
-        <div class='container-fluid'>
-            <h1>charts here</h1>
-        </div>
-        
-        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
-        <script src='' async defer></script>
-    </body>
-</html>
+{% endblock %}
