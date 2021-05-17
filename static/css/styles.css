@@ -46,7 +46,7 @@ select::-ms-expand {
     display: none;
 }
 
-.select {
+#selectCity {
     width: 2;
     height: 100%;
     background: #162B32;
@@ -62,6 +62,7 @@ select::-ms-expand {
     margin-top: 0;
     padding: 0;
     line-height: 80px;
+    position: fixed;
 }
 
 #header h1 {
@@ -82,4 +83,26 @@ select::-ms-expand {
     height: 20px;
     margin-top: -5px;
     margin-right: 10px;
+}
+
+#contentDiv {
+    display: flex;
+    padding-top: 80px;
+}
+
+/* LEFT DIV */
+
+#leftDiv {
+    width: 40%;
+}
+
+#leftDiv label {
+    color: #7E7E7E;
+    font-size: 18px;
+}
+
+/* RIGHT DIV */
+
+#rightDiv {
+    flex-grow: 1;
 }

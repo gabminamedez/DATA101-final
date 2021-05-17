@@ -1,12 +1,109 @@
-{% extends 'base.html' %}
+{% extends 'header.html' %}
 {% block head %}
 <!-- insert additional header content here -->
 {% endblock %}
 {% block body %} 
 <!-- insert body content here-->
 
-<div class='container-fluid'>
-    <h1>charts here</h1>
+<div id='contentDiv' class='container-fluid'>
+    <div id='leftDiv'>
+        <h1>Metro Manila<br>Traffic Incidence<br>Data</h1>
+
+        <div class='select'>
+            <label>I live in </label>
+            <select name='city'>
+                <option value=''>Metro Manila (All)</option>
+                <option value=''>Caloocan</option>
+                <option value=''>Las Piñas</option>
+                <option value=''>Makati</option>
+                <option value=''>Malabon</option>
+                <option value=''>Mandaluyong</option>
+                <option value=''>Manila</option>
+                <option value=''>Marikina</option>
+                <option value=''>Muntinlupa</option>
+                <option value=''>Navotas</option>
+                <option value=''>Parañaque</option>
+                <option value=''>Pasay</option>
+                <option value=''>Pasig</option>
+                <option value=''>Quezon City</option>
+                <option value=''>San Juan</option>
+                <option value=''>Taguig</option>
+                <option value=''>Valenzuela</option>
+            </select>
+
+            <br>
+
+            <label> and drive a </label>
+            <select name='vehicle'>
+                <option value=''>Car</option>
+                <option value=''>Truck</option>
+                <option value=''>Bus</option>
+            </select>
+            <label>.</label>
+
+            <br>
+            <br>
+            
+            <button type='button' class='btn btn-outline-secondary btn-large'>Submit</button>
+        </div>
+    </div>
+
+    <div id='rightDiv'>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, debitis, nulla vitae sequi dolorum consequatur pariatur dolor velit perspiciatis delectus quas labore maiores, sed vero quibusdam. Velit fuga maiores vitae?</p>
+    </div>
 </div>
 
 {% endblock %}
