@@ -105,4 +105,20 @@ select::-ms-expand {
 
 #rightDiv {
     flex-grow: 1;
+    margin-top: 15px;
+    margin-right: 80px;
+}
+
+#rightDiv h2 {
+    font-size: 24px;
+}
+
+.chart {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: solid 1px #7E7E7E;
+    margin-bottom: 20px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
