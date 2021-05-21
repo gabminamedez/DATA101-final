@@ -8,11 +8,15 @@ views = Blueprint('views', __name__)
 def main():
     '''
     This route loads main.html 
+    - Reinitalizes Database
     - Request for user to input from sentence fill.
     '''
+    # Code to add data to database
     DB_DATA.incident().to_sql(name='incident',if_exists='replace', con=db.engine, index=False)
     DB_DATA.vehicle().to_sql(name='incident_vehicles',if_exists='replace', con=db.engine, index=False)
     DB_DATA.tweet().to_sql(name='incident_tweet', con=db.engine,if_exists='replace', index=False)
+    
+    # Filter data by City, Vehicle
     if request.method == 'POST':
         city = request.form.get('city')
         vehicle = request.form.get('vehicle')
