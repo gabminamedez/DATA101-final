@@ -13,49 +13,69 @@
             <form method='POST'>
                 <label>I live in </label>
                 <select name='city'>
-                    <option value='metro'>Metro Manila (All)</option>
-                    <option value='caloocan'>Caloocan</option>
-                    <option value='laspinas'>Las Piñas</option>
-                    <option value='makati'>Makati</option>
-                    <option value='malabon'>Malabon</option>
-                    <option value='mandaluyong'>Mandaluyong</option>
-                    <option value='manila'>Manila</option>
-                    <option value='marikina'>Marikina</option>
-                    <option value='muntinlupa'>Muntinlupa</option>
-                    <option value='navotas'>Navotas</option>
-                    <option value='paranaque'>Parañaque</option>
-                    <option value='pasay'>Pasay</option>
-                    <option value='pasig'>Pasig</option>
-                    <option value='quezon'>Quezon City</option>
-                    <option value='sanjuan'>San Juan</option>
-                    <option value='taguig'>Taguig</option>
-                    <option value='valenzuela'>Valenzuela</option>
+                    {% if city == 'metro' %}<option value='metro' selected>Metro Manila (All)</option>{% else %}<option value='metro'>Metro Manila (All)</option>{% endif %}
+                    {% if city == 'caloocan' %}<option value='caloocan' selected>Caloocan</option>{% else %}<option value='caloocan'>Caloocan</option>{% endif %}
+                    {% if city == 'laspinas' %}<option value='laspinas' selected>Las Piñas</option>{% else %}<option value='laspinas'>Las Piñas</option>{% endif %}
+                    {% if city == 'makati' %}<option value='makati' selected>Makati</option>{% else %}<option value='makati'>Makati</option>{% endif %}
+                    {% if city == 'malabon' %}<option value='malabon' selected>Malabon</option>{% else %}<option value='malabon'>Malabon</option>{% endif %}
+                    {% if city == 'mandaluyong' %}<option value='mandaluyong' selected>Mandaluyong</option>{% else %}<option value='mandaluyong'>Mandaluyong</option>{% endif %}
+                    {% if city == 'manila' %}<option value='manila' selected>Manila</option>{% else %}<option value='manila'>Manila</option>{% endif %}
+                    {% if city == 'marikina' %}<option value='marikina' selected>Marikina</option>{% else %}<option value='marikina'>Marikina</option>{% endif %}
+                    {% if city == 'muntinlupa' %}<option value='muntinlupa' selected>Muntinlupa</option>{% else %}<option value='muntinlupa'>Muntinlupa</option>{% endif %}
+                    {% if city == 'navotas' %}<option value='navotas' selected>Navotas</option>{% else %}<option value='navotas'>Navotas</option>{% endif %}
+                    {% if city == 'paranaque' %}<option value='paranaque' selected>Parañaque</option>{% else %}<option value='paranaque'>Parañaque</option>{% endif %}
+                    {% if city == 'pasay' %}<option value='pasay' selected>Pasay</option>{% else %}<option value='pasay'>Pasay</option>{% endif %}
+                    {% if city == 'pasig' %}<option value='pasig' selected>Pasig</option>{% else %}<option value='pasig'>Pasig</option>{% endif %}
+                    {% if city == 'quezon' %}<option value='quezon' selected>Quezon City</option>{% else %}<option value='quezon'>Quezon City</option>{% endif %}
+                    {% if city == 'sanjuan' %}<option value='sanjuan' selected>San Juan</option>{% else %}<option value='sanjuan'>San Juan</option>{% endif %}
+                    {% if city == 'taguig' %}<option value='taguig' selected>Taguig</option>{% else %}<option value='taguig'>Taguig</option>{% endif %}
+                    {% if city == 'valenzuela' %}<option value='valenzuela' selected>Valenzuela</option>{% else %}<option value='valenzuela'>Valenzuela</option>{% endif %}
                 </select>
 
                 <br>
 
                 <label> and drive a </label>
                 <select name='vehicle'>
-                    <option value='car'>Car</option> <!-- SQL: CAR or CARS -->
-                    <option value='bus'>Bus</option> <!-- SQL: BUS or BUSES -->
-                    <option value='suv'>SUV</option> <!-- SQL: SUV -->
-                    <option value='mc'>MC</option> <!-- SQL: MC -->
-                    <option value='auv'>AUV</option> <!-- SQL: AUV or INNOVA -->
-                    <option value='van'>Van</option> <!-- SQL: VAN -->
-                    <option value='taxi'>Taxi</option> <!-- SQL: TAXI -->
-                    <option value='truck'>Truck</option> <!-- SQL: TRUCK -->
-                    <option value='motorcycle'>Motorcycle</option> <!-- MOTORCYCLE -->
-                    <option value='delivery'>Deilvery Van</option> <!-- DELIVERYVAN -->
-                    <option value='jeep'>Jeep</option> <!-- PUJ -->
-                    <option value='closed'>Closed Van</option> <!-- CLOSEDVAN -->
-                    <option value='wing'>Wing Van</option> <!-- WINGVAN -->
-                    <option value='pickup'>Pick-Up</option> <!-- PICK-UP or PICKUP -->
-                    <option value='dump'>Dump Truck</option> <!-- DUMPTRUCK -->
-                    <option value='elf'>Elf Truck</option> <!-- ELFTRUCK -->
-                    <option value='l300'>L300</option> <!-- L300 -->
-                    <option value='uv'>UV Express</option> <!-- UVEXPRESS -->
-                    <option value='trailer'>Trailer Truck</option> <!-- TRAILERTRUCK -->
-                    <option value='armored'>Armored Van</option> <!-- ARMOREDVAN -->
+                    <!-- SQL: CAR or CARS -->
+                    {% if vehicle == 'car' %}<option value='car' selected>Car</option>{% else %}<option value='car'>Car</option>{% endif %}
+                    <!-- SQL: BUS or BUSES -->
+                    {% if vehicle == 'bus' %}<option value='bus' selected>Bus</option>{% else %}<option value='bus'>Bus</option>{% endif %}
+                    <!-- SQL: SUV -->
+                    {% if vehicle == 'suv' %}<option value='suv' selected>SUV</option>{% else %}<option value='suv'>SUV</option>{% endif %}
+                    <!-- SQL: MC -->
+                    {% if vehicle == 'mc' %}<option value='mc' selected>MC</option>{% else %}<option value='mc'>MC</option>{% endif %}
+                    <!-- SQL: AUV or INNOVA -->
+                    {% if vehicle == 'auv' %}<option value='auv' selected>AUV</option>{% else %}<option value='auv'>AUV</option>{% endif %}
+                    <!-- SQL: VAN -->
+                    {% if vehicle == 'van' %}<option value='van' selected>Van</option>{% else %}<option value='van'>Van</option>{% endif %}
+                    <!-- SQL: TAXI -->
+                    {% if vehicle == 'taxi' %}<option value='taxi' selected>Taxi</option>{% else %}<option value='taxi'>Taxi</option>{% endif %}
+                    <!-- SQL: TRUCK -->
+                    {% if vehicle == 'truck' %}<option value='truck' selected>Truck</option>{% else %}<option value='truck'>Truck</option>{% endif %}
+                    <!-- MOTORCYCLE -->
+                    {% if vehicle == 'motorcycle' %}<option value='motorcycle' selected>Motorcycle</option>{% else %}<option value='motorcycle'>Motorcycle</option>{% endif %}
+                    <!-- DELIVERYVAN -->
+                    {% if vehicle == 'delivery' %}<option value='delivery' selected>Deilvery Van</option>{% else %}<option value='delivery'>Deilvery Van</option>{% endif %}
+                    <!-- PUJ -->
+                    {% if vehicle == 'jeep' %}<option value='jeep' selected>Jeep</option>{% else %}<option value='jeep'>Jeep</option>{% endif %}
+                    <!-- CLOSEDVAN -->
+                    {% if vehicle == 'closed' %}<option value='closed' selected>Closed Van</option>{% else %}<option value='closed'>Closed Van</option>{% endif %}
+                    <!-- WINGVAN -->
+                    {% if vehicle == 'wing' %}<option value='wing' selected>Wing Van</option>{% else %}<option value='wing'>Wing Van</option>{% endif %}
+                    <!-- PICK-UP or PICKUP -->
+                    {% if vehicle == 'pickup' %}<option value='pickup' selected>Pickup Truck</option>{% else %}<option value='pickup'>Pickup Truck</option>{% endif %}
+                    <!-- DUMPTRUCK -->
+                    {% if vehicle == 'dump' %}<option value='dump' selected>Dump Truck</option>{% else %}<option value='dump'>Dump Truck</option>{% endif %}
+                    <!-- ELFTRUCK -->
+                    {% if vehicle == 'elf' %}<option value='elf' selected>Elf Truck</option>{% else %}<option value='elf'>Elf Truck</option>{% endif %}
+                    <!-- L300 -->
+                    {% if vehicle == 'l300' %}<option value='l300' selected>L300</option>{% else %}<option value='l300'>L300</option>{% endif %}
+                    <!-- UVEXPRESS -->
+                    {% if vehicle == 'uv' %}<option value='uv' selected>UV Express</option>{% else %}<option value='uv'>UV Express</option>{% endif %}
+                    <!-- TRAILERTRUCK -->
+                    {% if vehicle == 'trailer' %}<option value='trailer' selected>Trailer Truck</option>{% else %}<option value='trailer'>Trailer Truck</option>{% endif %}
+                    <!-- ARMOREDVAN -->
+                    {% if vehicle == 'armored' %}<option value='armored' selected>Armored Van</option>{% else %}<option value='armored'>Armored Van</option>{% endif %}
                 </select>
                 <label>.</label>
 
@@ -68,32 +88,52 @@
     </div>
 
     <div id='rightDiv' class='container'>
-        <div id='trafficIncidents' class='chart'>
+        <!-- <div id='trafficIncidents' class='chart'>
             <h2 class='text-center'>Traffic Incidents</h2>
-            {% if city %}
-                <h3>{{city}}</h3>
-            {% endif %}
-            {% if vehicle %}
-                <h3>{{vehicle}}</h3>
-            {% endif %}
-        </div>
+            <div id='map'></div>
+        </div> -->
 
         <div id='topLocations' class='chart'>
-            <h2 class='text-center'>Top Locations</h2>
+            <h2 class='text-center'>Top Location</h2>
+            <embed class='pygal' type='image/svg+xml' src={{ chart2_data|safe }} />
         </div>
 
         <div id='timeIncidents' class='chart'>
-            <h2 class='text-center'>Time Series of Incidents</h2>
+            <h2 class='text-center'>Time Series of Incident (2020)</h2>
+            <embed class='pygal' type='image/svg+xml' src={{ chart3_data|safe }} />
         </div>
 
-        <div id='donutDirections' class='chart'>
-            <h2 class='text-center'>Direction of Incidents</h2>
+        <div id='pieDirections' class='chart'>
+            <h2 class='text-center'>Pie Chart of Directions</h2>
+            <embed class='pygal' type='image/svg+xml' src={{ chart4_data|safe }} />
         </div>
 
         <div id='treemapVehicles' class='chart'>
             <h2 class='text-center'>Tweetmap of Vehicles</h2>
         </div>
+
+        <div id='trafficIncidents' class='chart'>
+            <h2 class='text-center'>Traffic Incidents</h2>
+            <div id='map'></div>
+        </div>
     </div>
 </div>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FibWluYW1lZGV6IiwiYSI6ImNrcDQzbm5yaDFrZHcyb2xneWRoNjlwOG4ifQ.LMXLO1lm4-Uo80dsnyKFqg';
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [121.046, 14.565],
+        zoom: 10.10
+    });
+
+    var longs = {{ longs|safe }};
+    var lats = {{ lats|safe }};
+    for(var i = 0; i < longs.length; i++){
+        new mapboxgl.Marker().setLngLat([longs[i], lats[i]]).addTo(map);
+    }
+</script>
 
 {% endblock %}
