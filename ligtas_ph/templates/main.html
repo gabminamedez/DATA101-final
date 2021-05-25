@@ -62,7 +62,7 @@
                 <br>
                 <br>
                 
-                <button type='button' class='btn btn-outline-secondary btn-large'>Submit</button>
+                <button type='submit' class='btn btn-outline-secondary btn-large'>Submit</button>
             </form>
         </div>
     </div>
@@ -70,6 +70,12 @@
     <div id='rightDiv' class='container'>
         <div id='trafficIncidents' class='chart'>
             <h2 class='text-center'>Traffic Incidents</h2>
+            {% if city %}
+                <h3>{{city}}</h3>
+            {% endif %}
+            {% if vehicle %}
+                <h3>{{vehicle}}</h3>
+            {% endif %}
         </div>
 
         <div id='topLocations' class='chart'>
