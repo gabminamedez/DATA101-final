@@ -5,8 +5,6 @@ from pygal.style import Style, RedBlueStyle
 
 views = Blueprint('views', __name__)
 
-ACCESS_KEY = 'pk.eyJ1IjoiZ2FibWluYW1lZGV6IiwiYSI6ImNrb2F6eGRtODBnMGQycG83amRldTR1cGsifQ.nAVNKTR9tYX6JpaUKRc0LA'
-
 # Route will begin with initial sentence for data filtering
 @views.route('/', methods=['GET', 'POST'])
 def main():
