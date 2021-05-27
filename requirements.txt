@@ -1,3 +1,12 @@
 flask
 Flask-sqlalchemy
 pandas
+pygal
+geojson
+click
+itsdangerous
+Jinja2
+MarkupSafe
+requests
+Werkzeug
+gunicorn

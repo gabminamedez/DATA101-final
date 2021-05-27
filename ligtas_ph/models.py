@@ -1,6 +1,5 @@
 from . import db 
 
-
 class IncidentVehicles(db.Model):
     __tablename__ = "incident_vehicles"
     id = db.Column(db.Integer, primary_key=True)

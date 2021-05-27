@@ -1,12 +1,126 @@
-{% extends 'base.html' %}
+{% extends 'header.html' %}
 {% block head %}
 <!-- insert additional header content here -->
+<title>Ingat.ph | {{ city }}</title>
 {% endblock %}
 {% block body %} 
 <!-- insert body content here-->
 
-<div class='container-fluid'>
-    <h1>charts here</h1>
+<div id='contentDiv' class='container-fluid'>
+    <div id='leftDiv' class='container'>
+        <h1>Metro Manila Traffic Incidence Data</h1>
+
+        <br>
+
+        <div class='select'>
+            <form method='POST'>
+                <label>I live in </label>
+                <select name='city'>
+                    {% if city == 'Metro Manila' %}<option value='Metro Manila' selected>Metro Manila (All)</option>{% else %}<option value='Metro Manila'>Metro Manila (All)</option>{% endif %}
+                    {% if city == 'Kalookan City' %}<option value='Kalookan City' selected>Caloocan</option>{% else %}<option value='Kalookan City'>Caloocan</option>{% endif %}
+                    {% if city == 'Makati City' %}<option value='Makati City' selected>Makati</option>{% else %}<option value='Makati City'>Makati</option>{% endif %}
+                    {% if city == 'Malabon' %}<option value='Malabon' selected>Malabon</option>{% else %}<option value='Malabon'>Malabon</option>{% endif %}
+                    {% if city == 'Mandaluyong' %}<option value='Mandaluyong' selected>Mandaluyong</option>{% else %}<option value='Mandaluyong'>Mandaluyong</option>{% endif %}
+                    {% if city == 'Manila' %}<option value='Manila' selected>Manila</option>{% else %}<option value='Manila'>Manila</option>{% endif %}
+                    {% if city == 'Marikina' %}<option value='Marikina' selected>Marikina</option>{% else %}<option value='Marikina'>Marikina</option>{% endif %}
+                    {% if city == 'Navotas' %}<option value='Navotas' selected>Navotas</option>{% else %}<option value='Navotas'>Navotas</option>{% endif %}
+                    {% if city == 'Parañaque' %}<option value='Parañaque' selected>Parañaque</option>{% else %}<option value='Parañaque'>Parañaque</option>{% endif %}
+                    {% if city == 'Pasay City' %}<option value='Pasay City' selected>Pasay</option>{% else %}<option value='Pasay City'>Pasay</option>{% endif %}
+                    {% if city == 'Pasig City' %}<option value='Pasig City' selected>Pasig</option>{% else %}<option value='Pasig City'>Pasig</option>{% endif %}
+                    {% if city == 'Quezon City' %}<option value='Quezon City' selected>Quezon City</option>{% else %}<option value='Quezon City'>Quezon City</option>{% endif %}
+                    {% if city == 'San Juan' %}<option value='San Juan' selected>San Juan</option>{% else %}<option value='San Juan'>San Juan</option>{% endif %}
+                    {% if city == 'Taguig' %}<option value='Taguig' selected>Taguig</option>{% else %}<option value='Taguig'>Taguig</option>{% endif %}
+                    {% if city == 'Valenzuela' %}<option value='Valenzuela' selected>Valenzuela</option>{% else %}<option value='Valenzuela'>Valenzuela</option>{% endif %}
+                </select>
+
+                <br>
+
+                <label> and drive a </label>
+                <select name='vehicle'>
+                    {% if vehicle == 'Car' %}<option value='Car' selected>Car</option>{% else %}<option value='Car'>Car</option>{% endif %}
+                    {% if vehicle == 'Bus' %}<option value='Bus' selected>Bus</option>{% else %}<option value='Bus'>Bus</option>{% endif %}
+                    {% if vehicle == 'SUV' %}<option value='SUV' selected>SUV</option>{% else %}<option value='SUV'>SUV</option>{% endif %}
+                    {% if vehicle == 'MC' %}<option value='MC' selected>MC</option>{% else %}<option value='MC'>MC</option>{% endif %}
+                    {% if vehicle == 'AUV' %}<option value='AUV' selected>AUV</option>{% else %}<option value='AUV'>AUV</option>{% endif %}
+                    {% if vehicle == 'Van' %}<option value='Van' selected>Van</option>{% else %}<option value='Van'>Van</option>{% endif %}
+                    {% if vehicle == 'Taxi' %}<option value='Taxi' selected>Taxi</option>{% else %}<option value='Taxi'>Taxi</option>{% endif %}
+                    {% if vehicle == 'Truck' %}<option value='Truck' selected>Truck</option>{% else %}<option value='Truck'>Truck</option>{% endif %}
+                    {% if vehicle == 'Motorcycle' %}<option value='Motorcycle' selected>Motorcycle</option>{% else %}<option value='Motorcycle'>Motorcycle</option>{% endif %}
+                    {% if vehicle == 'Delivery Van' %}<option value='Delivery Van' selected>Deilvery Van</option>{% else %}<option value='Delivery Van'>Deilvery Van</option>{% endif %}
+                    {% if vehicle == 'Jeep' %}<option value='Jeep' selected>Jeep</option>{% else %}<option value='Jeep'>Jeep</option>{% endif %}
+                    {% if vehicle == 'Closed Van' %}<option value='Closed Van' selected>Closed Van</option>{% else %}<option value='Closed Van'>Closed Van</option>{% endif %}
+                    {% if vehicle == 'Wing Van' %}<option value='Wing Van' selected>Wing Van</option>{% else %}<option value='Wing Van'>Wing Van</option>{% endif %}
+                    {% if vehicle == 'Pickup' %}<option value='Pickup' selected>Pickup</option>{% else %}<option value='Pickup'>Pickup</option>{% endif %}
+                    {% if vehicle == 'Dump Truck' %}<option value='Dump Truck' selected>Dump Truck</option>{% else %}<option value='Dump Truck'>Dump Truck</option>{% endif %}
+                    {% if vehicle == 'Elf Truck' %}<option value='Elf Truck' selected>Elf Truck</option>{% else %}<option value='Elf Truck'>Elf Truck</option>{% endif %}
+                    {% if vehicle == 'L300' %}<option value='L300' selected>L300</option>{% else %}<option value='L300'>L300</option>{% endif %}
+                    {% if vehicle == 'UV Express' %}<option value='UV Express' selected>UV Express</option>{% else %}<option value='UV Express'>UV Express</option>{% endif %}
+                    {% if vehicle == 'Trailer Truck' %}<option value='Trailer Truck' selected>Trailer Truck</option>{% else %}<option value='Trailer Truck'>Trailer Truck</option>{% endif %}
+                    {% if vehicle == 'Armored Van' %}<option value='Armored Van' selected>Armored Van</option>{% else %}<option value='Armored Van'>Armored Van</option>{% endif %}
+                </select>
+                <label>.</label>
+
+                <br>
+                <br>
+                
+                <button type='submit' class='btn btn-outline-secondary btn-large'>Submit</button>
+
+                <br>
+                <br>
+
+                <label>Data shown spans from January 1, 2020 at minimum to December 27, 2020 at maximum.</label>
+            </form>
+        </div>
+    </div>
+
+    <div id='rightDiv' class='container'>
+        <h2 class='text-center'>Showing {{ vehicle }} Data from {{ city }}</h2>
+
+        <br>
+
+        <div id='trafficIncidents' class='chart'>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+        <div id='topLocations' class='chart'>
+            <h2 class='text-center'>Top Locations</h2>
+            <embed class='pygal' type='image/svg+xml' src={{ chart2_data|safe }} />
+        </div>
+
+        <div id='timeIncidents' class='chart'>
+            <h2 class='text-center'>Time Series of Incidents</h2>
+            <embed class='pygal' type='image/svg+xml' src={{ chart3_data|safe }} />
+        </div>
+
+        <div id='pieDirections' class='chart'>
+            <h2 class='text-center'>Pie Chart of Directions</h2>
+            <embed class='pygal' type='image/svg+xml' src={{ chart4_data|safe }} />
+        </div>
+
+        <div id='treemapVehicles' class='chart'>
+            <h2 class='text-center'>Tweetmap of Vehicles in {{ city }}</h2>
+            <embed class='pygal' type='image/svg+xml' src={{ chart5_data|safe }} />
+        </div>
+    </div>
 </div>
+
+<script type='module'>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FibWluYW1lZGV6IiwiYSI6ImNrcDQzbm5yaDFrZHcyb2xneWRoNjlwOG4ifQ.LMXLO1lm4-Uo80dsnyKFqg';
+
+    var map = new mapboxgl.Map({
+        container: 'trafficIncidents',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [121.046, 14.565],
+        zoom: 10.10
+    });
+
+    map.addControl(new mapboxgl.NavigationControl());
+
+    var longs = {{ longs|safe }};
+    var lats = {{ lats|safe }};
+    for(var i = 0; i < longs.length; i++){
+        new mapboxgl.Marker({color: '#EA4C46'}).setLngLat([longs[i], lats[i]]).addTo(map);
+    }
+</script>
 
 {% endblock %}

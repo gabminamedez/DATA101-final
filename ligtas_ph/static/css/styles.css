@@ -10,6 +10,7 @@
 html, body {
     background-color: #F5F5F5;
     font-family: 'Lato', sans-serif;
+    height: 100%;
 }
 
 h1 {
@@ -46,7 +47,7 @@ select::-ms-expand {
     display: none;
 }
 
-.select {
+#selectCity {
     width: 2;
     height: 100%;
     background: #162B32;
@@ -62,6 +63,8 @@ select::-ms-expand {
     margin-top: 0;
     padding: 0;
     line-height: 80px;
+    position: fixed;
+    z-index: 0;
 }
 
 #header h1 {
@@ -82,4 +85,59 @@ select::-ms-expand {
     height: 20px;
     margin-top: -5px;
     margin-right: 10px;
+}
+
+#contentDiv {
+    display: flex;
+    padding-top: 80px;
+    height: 100%;
+}
+
+/* LEFT DIV */
+
+#leftDiv {
+    width: 35%;
+}
+
+#leftDiv label {
+    color: #7E7E7E;
+    font-size: 18px;
+}
+
+/* RIGHT DIV */
+
+#rightDiv {
+    flex-grow: 1;
+    margin-top: 15px;
+    margin-right: 80px;
+    height: 100%;
+}
+
+#rightDiv h2 {
+    font-size: 24px;
+}
+
+.chart {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    border: solid 1px #7E7E7E;
+    padding-bottom: -20px;
+    margin-bottom: 20px;
+    height: min-content;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pygal {
+    border-radius: 8px;
+    background-color: #F2F2F2;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 710px !important;
+    height: 710px !important;
 }
