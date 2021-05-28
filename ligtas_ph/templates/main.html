@@ -107,11 +107,29 @@
 <script type='module'>
     mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FibWluYW1lZGV6IiwiYSI6ImNrcDQzbm5yaDFrZHcyb2xneWRoNjlwOG4ifQ.LMXLO1lm4-Uo80dsnyKFqg';
 
+    switch('{{ city }}'){
+        case 'Metro Manila': var center = [121.046, 14.565]; var zoom = 10.10; break;
+        case 'Kalookan City': var center = [121.000, 14.655]; var zoom = 12.30; break;
+        case 'Makati City': var center = [121.030, 14.556]; var zoom = 12.30; break;
+        case 'Malabon': var center = [120.96, 14.679]; var zoom = 12.30; break;
+        case 'Mandaluyong': var center = [121.039, 14.576]; var zoom = 12.30; break;
+        case 'Manila': var center = [120.992, 14.594]; var zoom = 12.30; break;
+        case 'Marikina': var center = [121.108, 14.631]; var zoom = 12.30; break;
+        case 'Navotas': var center = [120.953, 14.656]; var zoom = 12.30; break;
+        case 'Parañaque': var center = [121.005, 14.500]; var zoom = 12.30; break;
+        case 'Pasay City': var center = [121.009, 14.546]; var zoom = 12.30; break;
+        case 'Pasig City': var center = [121.087, 14.558]; var zoom = 12.30; break;
+        case 'Quezon City': var center = [121.056, 14.649]; var zoom = 12.30; break;
+        case 'San Juan': var center = [121.039, 14.603]; var zoom = 12.30; break;
+        case 'Taguig': var center = [121.082, 14.527]; var zoom = 12.30; break;
+        case 'Valenzuela': var center = [120.962, 14.710]; var zoom = 12.30; break;
+    }
+
     var map = new mapboxgl.Map({
         container: 'trafficIncidents',
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [121.046, 14.565],
-        zoom: 10.10
+        center: center,
+        zoom: zoom
     });
 
     map.addControl(new mapboxgl.NavigationControl());
